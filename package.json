@@ -8,7 +8,8 @@
     "start": "NODE_ENV=production node index",
     "test": "mocha --exit",
     "cover": "nyc npm run test",
-    "report": "nyc report --reporter=html && URL='coverage/index.html'; xdg-open $URL || sensible-browser $URL || x-www-browser $URL"
+    "report": "nyc report --reporter=html && URL='coverage/index.html'; xdg-open $URL || sensible-browser $URL || x-www-browser $URL",
+    "inspect": "DEBUG=express:*,app:* nodemon --inspect index"
   },
   "keywords": [],
   "author": "",
