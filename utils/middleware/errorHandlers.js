@@ -1,3 +1,5 @@
+/* eslint no-use-before-define: 0 */
+
 const boom = require('@hapi/boom');
 const { config } = require('../../config');
 
